@@ -2,7 +2,6 @@
 
 namespace Tzsk\Crypton\Tests;
 
-use Illuminate\Support\Facades\Crypt;
 use Illuminate\Encryption\Encrypter;
 
 class EncryptRequestTest extends TestCase

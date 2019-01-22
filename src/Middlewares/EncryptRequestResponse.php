@@ -15,7 +15,7 @@ class EncryptRequestResponse
     protected $crypton;
 
     /**
-     * Encrypt Reqeust Response Constructor
+     * Encrypt Reqeust Response Constructor.
      */
     public function __construct()
     {
