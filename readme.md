@@ -104,11 +104,11 @@ MIT. Please see the [license file](license.md) for more information.
 [ico-version]: https://img.shields.io/packagist/v/tzsk/crypton.svg?style=flat-square
 [ico-downloads]: https://img.shields.io/packagist/dt/tzsk/crypton.svg?style=flat-square
 [ico-travis]: https://img.shields.io/travis/tzsk/crypton/master.svg?style=flat-square
-[ico-styleci]: https://styleci.io/repos/12345678/shield
+[ico-styleci]: https://styleci.io/repos/167003474/shield
 
 [link-packagist]: https://packagist.org/packages/tzsk/crypton
 [link-downloads]: https://packagist.org/packages/tzsk/crypton
 [link-travis]: https://travis-ci.org/tzsk/crypton
-[link-styleci]: https://styleci.io/repos/12345678
+[link-styleci]: https://styleci.io/repos/167003474
 [link-author]: https://github.com/tzsk
 [link-contributors]: ../../contributors
