@@ -36,7 +36,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Tzsk\\Crypto\\cryptonServiceProvider"
+                "Tzsk\\Crypton\\CryptonServiceProvider"
             ]
         }
     }
