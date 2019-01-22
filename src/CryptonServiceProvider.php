@@ -2,7 +2,6 @@
 
 namespace Tzsk\Crypton;
 
-use Illuminate\Http\Response;
 use Illuminate\Support\ServiceProvider;
 
 class CryptonServiceProvider extends ServiceProvider
