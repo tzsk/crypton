@@ -1,9 +1,11 @@
 # Crypton
 
+[![Software License][ico-license]][link-license]
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Total Downloads][ico-downloads]][link-downloads]
 [![Build Status][ico-travis]][link-travis]
 [![StyleCI][ico-styleci]][link-styleci]
+[![Quality Score][ico-quality]][link-quality]
 
 This is a simple pakcage for laravel to encrypt decrypt api request & response in both ends, Backend & Javascript.
 
@@ -101,14 +103,19 @@ If you discover any security related issues, please email mailtokmahmed@gmail.co
 
 MIT. Please see the [license file](license.md) for more information.
 
+[ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
 [ico-version]: https://img.shields.io/packagist/v/tzsk/crypton.svg?style=flat-square
 [ico-downloads]: https://img.shields.io/packagist/dt/tzsk/crypton.svg?style=flat-square
 [ico-travis]: https://img.shields.io/travis/tzsk/crypton/master.svg?style=flat-square
 [ico-styleci]: https://styleci.io/repos/167003474/shield
+[ico-quality]: https://img.shields.io/scrutinizer/g/tzsk/crypton.svg?style=flat-square
 
+[link-license]: license.md
 [link-packagist]: https://packagist.org/packages/tzsk/crypton
 [link-downloads]: https://packagist.org/packages/tzsk/crypton
 [link-travis]: https://travis-ci.org/tzsk/crypton
 [link-styleci]: https://styleci.io/repos/167003474
+[link-quality]: https://scrutinizer-ci.com/g/tzsk/crypton
+
 [link-author]: https://github.com/tzsk
 [link-contributors]: ../../contributors
