@@ -28,10 +28,10 @@ class EncryptionFactory
     protected function key()
     {
         $key = config('crypton.key');
-        if(Str::contains($key, 'base64:')) {
+        if (Str::contains($key, 'base64:')) {
             $key = substr($key, 7);
         }
-        
+
         return base64_decode($key);
     }
 }
