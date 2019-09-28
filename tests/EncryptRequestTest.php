@@ -2,7 +2,7 @@
 
 namespace Tzsk\Crypton\Tests;
 
-use Illuminate\Encryption\Encrypter;
+use Tzsk\Crypton\EncryptionFactory;
 
 class EncryptRequestTest extends TestCase
 {
@@ -11,11 +11,11 @@ class EncryptRequestTest extends TestCase
      */
     protected $crypton;
 
-    public function setUp()
+    public function setUp() : void
     {
         parent::setUp();
 
-        $this->crypton = new Encrypter(base64_decode(config('crypton.key')), 'AES-256-CBC');
+        $this->crypton = EncryptionFactory::make();
     }
 
     public function test_it_ignores_normal_calls()
@@ -35,7 +35,7 @@ class EncryptRequestTest extends TestCase
         $this->assertArrayHasKey('payload', $response->json());
 
         $decrypted = $this->crypton->decrypt($response->json('payload'));
-        $this->assertArraySubset($data, $decrypted);
+        $this->assertSame($data, $decrypted);
     }
 
     public function test_it_will_decrypt_request_if_header_is_present()
@@ -61,6 +61,6 @@ class EncryptRequestTest extends TestCase
         $this->assertArrayHasKey('payload', $response->json());
 
         $decrypted = $this->crypton->decrypt($response->json('payload'));
-        $this->assertArraySubset($data, $decrypted);
+        $this->assertSame($data, $decrypted);
     }
 }

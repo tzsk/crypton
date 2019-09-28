@@ -5,7 +5,7 @@ namespace Tzsk\Crypton\Middlewares;
 use Closure;
 use Illuminate\Http\Request;
 use Illuminate\Http\JsonResponse;
-use Illuminate\Encryption\Encrypter;
+use Tzsk\Crypton\EncryptionFactory;
 
 class EncryptRequestResponse
 {
@@ -19,7 +19,7 @@ class EncryptRequestResponse
      */
     public function __construct()
     {
-        $this->crypton = new Encrypter(base64_decode(config('crypton.key')), 'AES-256-CBC');
+        $this->crypton = EncryptionFactory::make();
     }
 
     /**

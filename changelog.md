@@ -2,7 +2,10 @@
 
 All notable changes to `crypton` will be documented in this file.
 
-## Version 1.0
+## Version 2.0
 
 ### Added
-- Everything
+- Laravel 6 Support
+
+### Changed
+- Compatible with Laravel's default key structure.

@@ -44,7 +44,7 @@ Add an environment veriable in the `.env` file
 CRYPTON_KEY=your-encryption-key
 ```
 
-> **TIP:** You can easily generate an encryption key by running `php artisan key:generate` then copy the string after the `base64:...`. Then again run: `php artisan key:generate` to make the key used by crypton and the default application key is different.
+> **TIP:** You can easily generate an encryption key by running `php artisan key:generate` then copy the generated key. Then again run: `php artisan key:generate` to make the key used by crypton and the default application key different.
 
 **WARNING: DO NOT USE THE SAME `APP_KEY` AND `CRYPTON_KEY`**
 
