@@ -2,8 +2,8 @@
 
 namespace Tzsk\Crypton;
 
-use Illuminate\Support\Str;
 use Illuminate\Encryption\Encrypter;
+use Illuminate\Support\Str;
 
 class EncryptionFactory
 {

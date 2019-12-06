@@ -3,8 +3,8 @@
 namespace Tzsk\Crypton\Middlewares;
 
 use Closure;
-use Illuminate\Http\Request;
 use Illuminate\Http\JsonResponse;
+use Illuminate\Http\Request;
 use Tzsk\Crypton\EncryptionFactory;
 
 class EncryptRequestResponse
