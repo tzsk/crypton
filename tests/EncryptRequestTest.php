@@ -11,7 +11,7 @@ class EncryptRequestTest extends TestCase
      */
     protected $crypton;
 
-    public function setUp() : void
+    public function setUp(): void
     {
         parent::setUp();
 
