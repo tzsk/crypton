@@ -496,16 +496,16 @@
         },
         {
             "name": "league/commonmark",
-            "version": "1.5.3",
+            "version": "1.5.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/commonmark.git",
-                "reference": "2574454b97e4103dc4e36917bd783b25624aefcd"
+                "reference": "21819c989e69bab07e933866ad30c7e3f32984ba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/2574454b97e4103dc4e36917bd783b25624aefcd",
-                "reference": "2574454b97e4103dc4e36917bd783b25624aefcd",
+                "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/21819c989e69bab07e933866ad30c7e3f32984ba",
+                "reference": "21819c989e69bab07e933866ad30c7e3f32984ba",
                 "shasum": ""
             },
             "require": {
@@ -587,20 +587,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-07-19T22:47:30+00:00"
+            "time": "2020-08-18T01:19:12+00:00"
         },
         {
             "name": "league/flysystem",
-            "version": "1.1.0",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "481c0174b9c99b189959e2bb9d6f52188ed1f692"
+                "reference": "6e96f54d82e71f71c4108da33ee96a7f57083710"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/481c0174b9c99b189959e2bb9d6f52188ed1f692",
-                "reference": "481c0174b9c99b189959e2bb9d6f52188ed1f692",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/6e96f54d82e71f71c4108da33ee96a7f57083710",
+                "reference": "6e96f54d82e71f71c4108da33ee96a7f57083710",
                 "shasum": ""
             },
             "require": {
@@ -678,7 +678,7 @@
                     "type": "other"
                 }
             ],
-            "time": "2020-08-09T15:57:10+00:00"
+            "time": "2020-08-12T14:23:41+00:00"
         },
         {
             "name": "league/mime-type-detection",
@@ -3946,20 +3946,20 @@
         },
         {
             "name": "hamcrest/hamcrest-php",
-            "version": "v2.0.0",
+            "version": "v2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hamcrest/hamcrest-php.git",
-                "reference": "776503d3a8e85d4f9a1148614f95b7a608b046ad"
+                "reference": "8c3d0a3f6af734494ad8f6fbbee0ba92422859f3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hamcrest/hamcrest-php/zipball/776503d3a8e85d4f9a1148614f95b7a608b046ad",
-                "reference": "776503d3a8e85d4f9a1148614f95b7a608b046ad",
+                "url": "https://api.github.com/repos/hamcrest/hamcrest-php/zipball/8c3d0a3f6af734494ad8f6fbbee0ba92422859f3",
+                "reference": "8c3d0a3f6af734494ad8f6fbbee0ba92422859f3",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.3|^7.0"
+                "php": "^5.3|^7.0|^8.0"
             },
             "replace": {
                 "cordoval/hamcrest-php": "*",
@@ -3967,14 +3967,13 @@
                 "kodova/hamcrest-php": "*"
             },
             "require-dev": {
-                "phpunit/php-file-iterator": "1.3.3",
-                "phpunit/phpunit": "~4.0",
-                "satooshi/php-coveralls": "^1.0"
+                "phpunit/php-file-iterator": "^1.4 || ^2.0",
+                "phpunit/phpunit": "^4.8.36 || ^5.7 || ^6.5 || ^7.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.0-dev"
+                    "dev-master": "2.1-dev"
                 }
             },
             "autoload": {
@@ -3984,35 +3983,35 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "BSD"
+                "BSD-3-Clause"
             ],
             "description": "This is the PHP port of Hamcrest Matchers",
             "keywords": [
                 "test"
             ],
-            "time": "2016-01-20T08:20:44+00:00"
+            "time": "2020-07-09T08:09:16+00:00"
         },
         {
             "name": "mockery/mockery",
-            "version": "1.3.1",
+            "version": "1.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mockery/mockery.git",
-                "reference": "f69bbde7d7a75d6b2862d9ca8fab1cd28014b4be"
+                "reference": "60fa2f67f6e4d3634bb4a45ff3171fa52215800d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mockery/mockery/zipball/f69bbde7d7a75d6b2862d9ca8fab1cd28014b4be",
-                "reference": "f69bbde7d7a75d6b2862d9ca8fab1cd28014b4be",
+                "url": "https://api.github.com/repos/mockery/mockery/zipball/60fa2f67f6e4d3634bb4a45ff3171fa52215800d",
+                "reference": "60fa2f67f6e4d3634bb4a45ff3171fa52215800d",
                 "shasum": ""
             },
             "require": {
-                "hamcrest/hamcrest-php": "~2.0",
+                "hamcrest/hamcrest-php": "^2.0.1",
                 "lib-pcre": ">=7.0",
                 "php": ">=5.6.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "~5.7.10|~6.5|~7.0|~8.0"
+                "phpunit/phpunit": "^5.7.10|^6.5|^7.5|^8.5|^9.3"
             },
             "type": "library",
             "extra": {
@@ -4055,7 +4054,7 @@
                 "test double",
                 "testing"
             ],
-            "time": "2019-12-26T09:49:15+00:00"
+            "time": "2020-08-11T18:10:21+00:00"
         },
         {
             "name": "myclabs/deep-copy",
@@ -4107,22 +4106,22 @@
         },
         {
             "name": "orchestra/testbench",
-            "version": "v5.3.0",
+            "version": "v5.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/orchestral/testbench.git",
-                "reference": "57129325ae77e9e3fa6a577b4c3544398af1620e"
+                "reference": "b6601ce910984ccaa24aaffdeda03016e056e9eb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/orchestral/testbench/zipball/57129325ae77e9e3fa6a577b4c3544398af1620e",
-                "reference": "57129325ae77e9e3fa6a577b4c3544398af1620e",
+                "url": "https://api.github.com/repos/orchestral/testbench/zipball/b6601ce910984ccaa24aaffdeda03016e056e9eb",
+                "reference": "b6601ce910984ccaa24aaffdeda03016e056e9eb",
                 "shasum": ""
             },
             "require": {
                 "laravel/framework": "^7.10",
                 "mockery/mockery": "^1.3.1",
-                "orchestra/testbench-core": "^5.1.4",
+                "orchestra/testbench-core": "^5.2",
                 "php": ">=7.2.5",
                 "phpunit/phpunit": "^8.4 || ^9.0"
             },
@@ -4159,24 +4158,24 @@
                     "type": "custom"
                 },
                 {
-                    "url": "https://www.patreon.com/crynobone",
-                    "type": "patreon"
+                    "url": "https://liberapay.com/crynobone",
+                    "type": "liberapay"
                 }
             ],
-            "time": "2020-05-30T01:04:58+00:00"
+            "time": "2020-08-17T23:01:56+00:00"
         },
         {
             "name": "orchestra/testbench-core",
-            "version": "v5.1.4",
+            "version": "v5.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/orchestral/testbench-core.git",
-                "reference": "41ebd765f5b3f1aba366cc6b2f5b3856a1715519"
+                "reference": "cc82d4034fbc1005851ca9a6c9ea2f316f25624a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/orchestral/testbench-core/zipball/41ebd765f5b3f1aba366cc6b2f5b3856a1715519",
-                "reference": "41ebd765f5b3f1aba366cc6b2f5b3856a1715519",
+                "url": "https://api.github.com/repos/orchestral/testbench-core/zipball/cc82d4034fbc1005851ca9a6c9ea2f316f25624a",
+                "reference": "cc82d4034fbc1005851ca9a6c9ea2f316f25624a",
                 "shasum": ""
             },
             "require": {
@@ -4235,11 +4234,11 @@
                     "type": "custom"
                 },
                 {
-                    "url": "https://www.patreon.com/crynobone",
-                    "type": "patreon"
+                    "url": "https://liberapay.com/crynobone",
+                    "type": "liberapay"
                 }
             ],
-            "time": "2020-05-02T13:35:10+00:00"
+            "time": "2020-08-17T22:51:07+00:00"
         },
         {
             "name": "phar-io/manifest",
@@ -4804,6 +4803,7 @@
             "keywords": [
                 "tokenizer"
             ],
+            "abandoned": true,
             "time": "2019-09-17T06:23:10+00:00"
         },
         {
