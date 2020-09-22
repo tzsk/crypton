@@ -2,6 +2,9 @@
 
 All notable changes to `crypton` will be documented in this file
 
-## 1.0.0 - 202X-XX-XX
+## 4.0.0
 
-- initial release
+- Laravel 8 Support
+- New config publish command
+- Integrated github workflows
+- Changed middleware namespace
