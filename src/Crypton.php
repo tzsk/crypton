@@ -5,27 +5,18 @@ namespace Tzsk\Crypton;
 use Illuminate\Encryption\Encrypter;
 use Illuminate\Support\Str;
 
-class EncryptionFactory
+class Crypton
 {
-    /**
-     * @var string
-     */
-    protected $cipher = 'AES-256-CBC';
+    protected string $cipher = 'AES-256-CBC';
 
-    /**
-     * @return Encrypter
-     */
-    public static function make()
+    public static function make(): Encrypter
     {
         $factory = new self;
 
         return new Encrypter($factory->key(), $factory->cipher);
     }
 
-    /**
-     * @return string
-     */
-    protected function key()
+    protected function key(): string
     {
         $key = config('crypton.key');
         if (Str::contains($key, 'base64:')) {

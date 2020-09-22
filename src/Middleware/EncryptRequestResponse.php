@@ -1,32 +1,21 @@
 <?php
 
-namespace Tzsk\Crypton\Middlewares;
+namespace Tzsk\Crypton\Middleware;
 
 use Closure;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
-use Tzsk\Crypton\EncryptionFactory;
+use Tzsk\Crypton\Crypton;
 
 class EncryptRequestResponse
 {
-    /**
-     * @var \Illuminate\Encryption\Encrypter
-     */
     protected $crypton;
 
-    /**
-     * Encrypt Reqeust Response Constructor.
-     */
     public function __construct()
     {
-        $this->crypton = EncryptionFactory::make();
+        $this->crypton = Crypton::make();
     }
 
-    /**
-     * @param Request $request
-     * @param Closure $next
-     * @return mixed
-     */
     public function handle(Request $request, Closure $next)
     {
         if ($request->header('X-REQUEST-ENCRYPTED')) {
@@ -41,10 +30,6 @@ class EncryptRequestResponse
         return $response;
     }
 
-    /**
-     * @param Request $request
-     * @return void
-     */
     protected function modifyRequest(Request $request)
     {
         $decrypted = $request->payload ? $this->crypton->decrypt($request->payload) : null;
@@ -54,17 +39,13 @@ class EncryptRequestResponse
         }
     }
 
-    /**
-     * @param JsonResponse $response
-     * @return void
-     */
     protected function modifyResponse(Request $request, JsonResponse $response)
     {
         if ($request->header('X-RESPONSE-ENCRYPTED')) {
             $payload = ['payload' => $this->crypton->encrypt(json_decode($response->content(), true))];
 
             $response->setContent(json_encode($payload));
-            $response->header('X-RESPONSE-ENCRYPTED', 1);
+            $response->header('X-RESPONSE-ENCRYPTED', "1");
         }
     }
 }

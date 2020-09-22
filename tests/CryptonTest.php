@@ -2,9 +2,9 @@
 
 namespace Tzsk\Crypton\Tests;
 
-use Tzsk\Crypton\EncryptionFactory;
+use Tzsk\Crypton\Crypton;
 
-class EncryptRequestTest extends TestCase
+class CryptonTest extends TestCase
 {
     /**
      * @var Encrypter
@@ -15,7 +15,7 @@ class EncryptRequestTest extends TestCase
     {
         parent::setUp();
 
-        $this->crypton = EncryptionFactory::make();
+        $this->crypton = Crypton::make();
     }
 
     public function test_it_ignores_normal_calls()
